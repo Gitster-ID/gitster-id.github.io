@@ -21,7 +21,8 @@ module.exports = function(grunt) {
               {expand: true, cwd: 'node_modules/bootstrap/dist/css/', src: ['**/*.min.css'], dest: 'dist/css/'},
               {expand: true, cwd: 'node_modules/daemonite-material/js/', src: ['**/*.min.js'], dest: 'dist/js/'},
               {expand: true, cwd: 'node_modules/daemonite-material/css/', src: ['**/*.min.css'], dest: 'dist/css/'},
-              {expand: true, cwd: 'node_modules/font-awesome/css/', src: ['**/*.min.css'], dest: 'dist/css/'}
+              {expand: true, cwd: 'node_modules/font-awesome/css/', src: ['**/*.min.css'], dest: 'dist/css/'},
+              {expand: true, cwd: 'src/favicon/', src: ['**/*.png'], dest: 'dist/favicon/'}
             ],
           },
         },
