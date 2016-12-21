@@ -1,0 +1,34 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    title Gitster-ID
+    meta(name="viewport", content="width=device-width,minimum-scale=1,initial-scale=1")
+    include partials/head.pug
+  body
+    // Navigation
+    header.navbar.navbar-dark.navbar-fixed-top.bd-navbar.bg-info
+      .container
+        nav
+          .clearfix
+            button.navbar-toggler.float-xs-right.hidden-sm-up.collapsed(type="button", data-toggle="collapse", data-target="#bd-main-nav", aria-controls="bd-main-nav", aria-expanded="false", aria-label="Toggle navigation")
+            a.navbar-brand.hidden-sm-up(href="/") Gitster-ID
+          #bd-main-nav.navbar-toggleable-xs.collapse(aria-expanded="false", style="")
+            .navbar-header.hidden-xs-down
+              a.nav-link.navbar-brand(href="/") Gitster-ID
+            ul.nav.navbar-nav.float-md-right
+              li.nav-item
+                a.nav-item.nav-link(href="javascript:void(0)") Berkas Dokumentasi
+              li.nav-item
+                a.nav-item.nav-link(href="//gitter.im/Gitster-ID") Ruang Diskusi
+              li.nav-item
+                a.nav-item.nav-link(href="//github.com/Gitster-ID") Komunitas Github
+              li.nav-item
+                a.nav-item.nav-link(href="javascript:void(0)") Tentang
+      // /.container
+    .container
+      block body
+    footer.footer
+      .container.text-sm-right.text-xs-center
+        span.text-muted &copy; Gitster-ID. All rights reserved
+    include partials/foot.pug

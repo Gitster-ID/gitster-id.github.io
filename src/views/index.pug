@@ -1,0 +1,47 @@
+extends layout.pug
+block body
+  .row
+    .col-sm-4.col-xs-12
+      h1.display-2 Gitster-ID!
+      p.typography-subheading
+        strong Gitster-ID
+        = " "
+        | adalah situs atau tempat untuk komunitas para Gitster di Indonesia untuk belajar dasar-dasar Git.
+      a.btn.btn-lg.btn-info(href="javascript:void(0)") Ayo Mulai!
+    .col-sm-8.col-xs-12
+      h1.display-2 Apa itu Git?
+      p.typography-subheading
+        strong Git
+        = " "
+        | adalah tools yang berfungsi sebagai Version Control System (VCS) dan kalau diartikan ke bahasa kita artinya sebuah sistem pelacak perubahan pada file. Git dibuat oleh Linus Torvalds. Pada awalnya Git digunakan untuk membantu pengembangan Kernel Linux sebelum akhirnya dipakai lebih luas di berbagai pengembangan software lainnya dan dibuat multi-platform sehingga tersedia di hampir semua OS.
+  hr
+  h2.display-4 Terlebih dahulu, kamu harus menginstall sebuah Git Client
+  br
+  .row
+    .col-sm-4.col-xs-12
+      h2.display-4
+        i.fa.fa-linux
+        = " "
+        | Linux
+      .typography-subheading
+        code apt-get install git
+        br
+        code yum install git
+        br
+        code zypper in git
+    .col-sm-4.col-xs-12
+      h2.display-4
+        i.fa.fa-apple
+        = " "
+        | Mac
+      .typography-subheading
+        a(href="//git-scm.com/download/mac", target="_blank") Git untuk Mac OS
+        br
+        code brew install git
+    .col-sm-4.col-xs-12
+      h2.display-4
+        i.fa.fa-windows
+        = " "
+        | Windows
+      .typography-subheading
+        a(href="//git-for-windows.github.io", target="_blank") Git untuk Windows
