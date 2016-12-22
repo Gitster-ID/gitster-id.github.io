@@ -1,13 +1,15 @@
 {
   "globals": {
     "jQuery": true,
-    "$": true
+    "$": true,
+    "Router": true,
+    "showdown": true
   },
   "curly": true,
   "eqeqeq": true,
   "immed": true,
   "latedef": true,
-  "newcap": true,
+  "newcap": false,
   "noarg": true,
   "sub": true,
   "undef": true,
