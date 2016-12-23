@@ -2,6 +2,14 @@ var show = new showdown.Converter();
 var home = function() {
   window.location.replace("//gitster-id.github.io/Gitster-ID/");
 };
+
+var about = function() {
+  $.get("/docs/thank_you.md", function(res){
+    $("body > .container").html("<div class=\"markdown typography-subheading\"></div>");
+    $(".markdown").html(show.makeHtml(res));
+  });
+};
+
 var pages = function (page) {
   $.get("//gitster-id.github.io/Gitster-ID/docs/" + page.replace(/\s|\-/g, '_').toLowerCase() + ".md", function(res){
     $("body > .container").html("<div class=\"markdown\"></div>");
@@ -31,7 +39,8 @@ var docs = function () {
 var routes = {
   '/pages/:page': pages,
   '/docs': docs,
-  '/home': home
+  '/home': home,
+  '/about': about
 };
 
 var router = Router(routes);
