@@ -3,7 +3,7 @@ var home = function() {
   window.location.replace("//gitster-id.github.io/Gitster-ID/");
 };
 var pages = function (page) {
-  $.get("/docs/" + page.replace(/\s|\-/g, '_').toLowerCase() + ".md", function(res){
+  $.get("//gitster-id.github.io/Gitster-ID/docs/" + page.replace(/\s|\-/g, '_').toLowerCase() + ".md", function(res){
     $("body > .container").html("<div class=\"markdown\"></div>");
     $(".markdown").html(show.makeHtml(res));
   });
