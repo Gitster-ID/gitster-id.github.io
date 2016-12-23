@@ -4,7 +4,7 @@ var home = function() {
 };
 
 var about = function() {
-  $.get("/docs/thank_you.md", function(res){
+  $.get("//gitster-id.github.io/Gitster-ID/docs/thank_you.md", function(res){
     $("body > .container").html("<div class=\"markdown typography-subheading\"></div>");
     $(".markdown").html(show.makeHtml(res));
   });
