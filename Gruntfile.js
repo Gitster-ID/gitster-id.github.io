@@ -24,6 +24,7 @@ module.exports = function(grunt) {
               {expand: true, cwd: 'node_modules/director/build/', src: ['**/*.min.js'], dest: 'dist/js/'},
               {expand: true, cwd: 'node_modules/showdown/dist/', src: ['**/*.min.js'], dest: 'dist/js/'},
               {expand: true, cwd: 'node_modules/font-awesome/css/', src: ['**/*.min.css'], dest: 'dist/css/'},
+              {expand: true, cwd: 'node_modules/font-awesome/fonts/', src: ['**/*'], dest: 'dist/fonts/'},
               {expand: true, cwd: 'src/favicon/', src: ['**/*.png'], dest: 'dist/favicon/'}
             ],
           },
