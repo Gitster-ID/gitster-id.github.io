@@ -1,24 +1,24 @@
 var show = new showdown.Converter();
 var home = function() {
-  window.location.replace("//gitster-id.github.io/Gitster-ID/");
+  window.location.replace("/");
 };
 
 var about = function() {
-  $.get("//gitster-id.github.io/Gitster-ID/docs/thank_you.md", function(res){
+  $.get("/docs/thank_you.md", function(res){
     $("body > .container").html("<div class=\"markdown typography-subheading\"></div>");
     $(".markdown").html(show.makeHtml(res));
   });
 };
 
 var pages = function (page) {
-  $.get("//gitster-id.github.io/Gitster-ID/docs/" + page.replace(/\s|\-/g, '_').toLowerCase() + ".md", function(res){
+  $.get("/docs/" + page.replace(/\s|\-/g, '_').toLowerCase() + ".md", function(res){
     $("body > .container").html("<div class=\"markdown\"></div>");
     $(".markdown").html(show.makeHtml(res));
   });
 };
 
 var docs = function () {
-  $.getJSON( "//gitster-id.github.io/Gitster-ID/pages.json", function( data ) {
+  $.getJSON( "/pages.json", function( data ) {
     $("body > .container").html("");
     var items = [];
     data.sort(function(a, b) {
