@@ -18,7 +18,7 @@ var pages = function (page) {
 };
 
 var docs = function () {
-  $.getJSON( "/pages.json", function( data ) {
+  $.getJSON( "/docs/routes.json", function( data ) {
     $("body > .container").html("");
     var items = [];
     data.sort(function(a, b) {
