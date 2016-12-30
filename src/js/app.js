@@ -3,6 +3,10 @@ var home = function() {
   window.location.replace("/");
 };
 
+$("a[href^='#']").click(function(){
+  $(".in").removeClass("in");
+});
+
 var about = function() {
   $.get("/docs/thank_you.md", function(res){
     $("body > .container").html("<div class=\"markdown typography-subheading\"></div>");
