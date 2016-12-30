@@ -4,7 +4,7 @@ var home = function() {
 };
 
 $("a[href^='#']").click(function(){
-  $(".in").removeClass("in");
+  $(".navbar-toggler").click();
 });
 
 var about = function() {
