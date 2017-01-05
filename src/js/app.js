@@ -41,10 +41,10 @@ var pages = function (page) { // GET /#/pages/{filename}
       var next = getPageDetail(dataRoute, pageDetail.pid + 1);
       $("body > .container").append("<nav aria-label=\"Page navigation\"><ul class=\"pagination pull-right\"></ul></nav>");
       if(prev){
-        $(".pagination").append("<li class=\"page-item\"><a class=\"page-link\" href=\"/#/" + prev.file + "\"><i class=\"fa fa-angle-double-left\" aria-hidden=\"true\"></i> " + prev.pid + '. ' + prev.name + "</a></li>");
+        $(".pagination").append("<li class=\"page-item\"><a class=\"page-link\" href=\"/#/pages/" + prev.file + "\"><i class=\"fa fa-angle-double-left\" aria-hidden=\"true\"></i> " + prev.pid + '. ' + prev.name + "</a></li>");
       }
       if(next){
-        $(".pagination").append("<li class=\"page-item\"><a class=\"page-link\" href=\"/#/" + next.file + "\">" + next.pid + '. ' + next.name + " <i class=\"fa fa-angle-double-right\" aria-hidden=\"true\"></i></a></li>");
+        $(".pagination").append("<li class=\"page-item\"><a class=\"page-link\" href=\"/#/pages/" + next.file + "\">" + next.pid + '. ' + next.name + " <i class=\"fa fa-angle-double-right\" aria-hidden=\"true\"></i></a></li>");
       }
     });
   });
